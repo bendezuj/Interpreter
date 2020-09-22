@@ -14,7 +14,7 @@ public:
     int Read(const string& input) {
     bool isMatch = true;
     int inputRead = 0;
-    for (unsigned int i = 0; i < (int)toMatch.size() && isMatch; i++) {
+    for (int i = 0; i < (int)toMatch.size() && isMatch; i++) {
         if (input[i] != toMatch[i]) {
             isMatch = false;
         }
