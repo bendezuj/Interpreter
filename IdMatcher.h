@@ -14,15 +14,11 @@
 class IdMatcher : public Automaton {
 private:
 public:
-    string A = "Schemes";
-    string B = "Facts";
-    string C = "Rules";
-    string D = "Queries";
     IdMatcher(): Automaton(ID){
     }
     
     int Read(const string& input) {
-        if(input.substr(0,6) == "Schemes" || input.substr(0,6) == "Queries" || input.substr(0,5) == "Facts" || input.substr(0,5) == "Rules"){
+        if(input.substr(0,7) == "Schemes " || input.substr(0,7) == "Queries " || input.substr(0,6) == "Facts " || input.substr(0,6) == "Rules " || input.substr(0,7) == "Schemes\n" || input.substr(0,7) == "Queries\n" || input.substr(0,6) == "Facts\n" || input.substr(0,6) == "Rules\n"){
             return 0;
         }
         if(isalpha(input[0])){

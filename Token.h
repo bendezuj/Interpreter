@@ -62,7 +62,7 @@ public:
     }
     string toString(){
         stringstream str;
-        str << "(" << tokenMap.at(theToken) << ", \""  << stringFromFile << "\" ," << lineNum << ")" << endl;
+        str << "(" << tokenMap.at(theToken) << ",\""  << stringFromFile << "\"," << lineNum << ")" << endl;
         return str.str();
     }
 };

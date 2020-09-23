@@ -17,6 +17,7 @@ public:
     InfiniteComment(): Automaton(UNDEFINED){
     }
     int Read(const string& input) {
+        newLines = 0;
         int inputRead = 0;
         if(input[0] == matchA && input[1] == matchB){
                 for(unsigned int i = 0; i < input.size(); i++){

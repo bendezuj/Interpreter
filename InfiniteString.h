@@ -19,6 +19,7 @@ public:
     InfiniteString(): Automaton(UNDEFINED){
     }
     int Read(const string& input){
+        newLines = 0;
         int inputRead = 0;
         if(input[0] == toMatch){
             inputRead++;
