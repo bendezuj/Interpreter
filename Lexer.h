@@ -47,11 +47,11 @@ class Lexer {
             int inputRead = 0;
             int maxRead = 0;
             Automaton* maxMachine = machines[0];
-            while(input[0] == '\n'){
-                input = input.substr(1);
-                lineNumber++;
-            }
-            while(isspace(input[0])){
+            while(input[0] == '\n' || isspace(input[0])){
+                if(input[0] == '\n'){
+                    lineNumber++;
+
+                }
                 input = input.substr(1);
             }
             if(input.size()==0){

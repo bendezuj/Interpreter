@@ -81,4 +81,3 @@ Queries:
    Roll('CS101',Room,Name,Id,Grade)?
    Roll('EE200',Room,Name,Id,Grade)?
    Roll('PH100',Room,Name,Id,Grade)?
-
